@@ -1,16 +1,146 @@
-# React + Vite
+<img width="1851" height="893" alt="Screenshot 2026-01-19 122953" src="https://github.com/user-attachments/assets/5ddd3074-30d8-4052-8522-ecaa792c0213" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛒 Product Management App (React + Redux Toolkit)
 
-Currently, two official plugins are available:
+A simple **Product Management Application** built using **React**, **Redux Toolkit**, and **React-Bootstrap**.
+This app allows users to **add, update, delete, search, filter, and sort products** with a clean UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ➕ Add new products
+* ✏️ Update existing products
+* ❌ Delete products
+* 🔍 Search products by name
+* 🔃 Sort products by:
 
-## Expanding the ESLint configuration
+  * ID (Ascending / Descending)
+  * Price (Ascending / Descending)
+  * Quantity (Ascending / Descending)
+* 📦 View total price per product (price × quantity)
+* 🎨 Responsive UI using React-Bootstrap
+* 🧠 State management using Redux Toolkit
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Tech Stack
+
+* **React**
+* **Redux Toolkit**
+* **React Redux**
+* **React-Bootstrap**
+* **React Icons**
+* **JavaScript (ES6+)**
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── InputForm.jsx        # Add / Update product form
+│   └── ProductList.jsx     # Product table with search & filters
+│
+├── features/
+│   └── product/
+│       └── productSlice.js # Redux slice for product state
+│
+├── app/
+│   └── store.js            # Redux store configuration
+│
+├── App.js
+└── index.js
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/product-management-app.git
+cd product-management-app
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start the development server
+
+```bash
+npm start
+```
+
+The app will run on:
+👉 `http://localhost:3000`
+
+---
+
+## 🧪 How It Works
+
+### ➕ Add Product
+
+* Fill in the product form
+* Click **Add Product**
+* Product appears in the table
+
+### ✏️ Update Product
+
+* Click the **edit icon** in the product table
+* Form auto-fills with product data
+* Click **Update Product**
+
+### ❌ Delete Product
+
+* Click the **delete icon**
+* Product is removed from the list
+
+### 🔍 Search & Filter
+
+* Search by product name
+* Sort using dropdown options
+
+---
+
+## 🖼 UI Preview (Features)
+
+* Responsive form layout
+* Product table with actions
+* Empty state message when no products exist
+
+---
+
+## 📌 Future Improvements (Optional)
+
+* Persist data using LocalStorage or backend API
+* Add product validation
+* Add pagination
+* Add category-based filtering
+* Authentication (Admin/User)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+### 👨‍💻 Author
+
+
+
